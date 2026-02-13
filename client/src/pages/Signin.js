@@ -23,7 +23,7 @@ const Signin = () => {
   async function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
-    const url = `${process.env.BASE_URL}/api/v1/createuser`;
+    const url = `${process.env.REACT_APP_API}/api/v1/createuser`;
     const data = await fetch(url, {
       method: "POST",
       headers: new Headers({ "content-type": "application/json" }),
