@@ -20,7 +20,7 @@ const Login = () => {
   async function handleSubmission(event) {
     event.preventDefault();
 
-    const url = `${process.env.BASE_URL}/api/v1/login`;
+    const url = `${process.env.REACT_APP_API}/api/v1/login`;
     const data = await fetch(url, {
       method: "POST",
       headers: {
